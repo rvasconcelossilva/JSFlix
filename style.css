@@ -1,0 +1,141 @@
+html {
+    height: 100%;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    align-items: center;
+    height: 60px;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    background-image: url("images/hero-bg.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+
+.btn-login-home{
+    font-size: 14px;
+    padding: 10px 30px;
+    color: #625928;
+    background-color: #f6d515;
+    border: 1px solid #f6d515;
+    border-radius: 3px;
+}
+
+.btn-trial {
+
+    font-size: 14px;
+    padding: 10px 30px;
+    color: #625928;
+    background-color: #f6d515;
+    border: 1px solid #f6d515;
+    border-radius: 3px;
+    font-style: normal;
+
+    /* I put this margin to align the space between the text x button */
+    margin: 70px;
+    
+}
+
+a {
+    font-size: 14px;
+    color: #625928;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+
+.content {
+    height: calc(100% - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+
+
+.mask { 
+    background-image: url("images/hero-mask.png");
+    height: 100%;
+}   
+
+h1 {
+        font-size: 50px;
+        font-family: sans-serif;
+        
+        /* I put this margin to align the space in the text */
+        margin: -11px;
+}
+
+p {
+    font-size: 16px;
+    color: rgb(232, 232, 173);
+    font-family: sans-serif;
+
+}
+
+
+/* Format Login Page */
+.btn-back-home{
+    cursor:pointer;
+    color: rgb(234,227,166);
+    font-weight: bold;
+}
+
+.btn-login-login {
+    font-size: 14px;
+    padding: 10px 115px;
+    width: 7.3cm;
+    height: 1.3cm;
+    color: #625928;
+    background-color: #f6d515;
+    border: 1px solid #f6d515;
+    border-radius: 3px;
+    display: flex;
+    margin: 10px 20px 0 10px;
+    font-weight: bold;
+}
+
+span {
+    font-family: sans-serif;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    color: rgb(119,119,100);
+    padding: 0px 0 2px 11px;
+
+    
+}
+
+input {
+    height: 0.8cm;
+    width: 7cm;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 5px;
+    margin: 10px;
+    
+    
+}
+
+.form-background {
+    background-image: url("images/hero-mask.png");
+    height: 37%;
+    background: rgba(0, 0, 0, 0.7); 
+    padding: 70px 40px;
+}
+
+::placeholder {
+    color: gray;
+    opacity: 0.5;
+}
