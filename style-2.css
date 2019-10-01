@@ -2,17 +2,13 @@ html {
     height: 100%;
 }
 
+
 header {
-    margin-top: 30px;
     display: flex;
     justify-content: space-between;
     padding: 20px 50px;
     align-items: center;
     height: 60px;
-    position: relative;
-
-    /* essa propriedade permite criar "camadas" para posicionar os elementos, usei esse para posicionar o header na frente dos backgrounds*/
-    z-index: 21;
 }
 
 body {
@@ -22,8 +18,8 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    font-family: 'Roboto', sans-serif;
 }
+
 
 .btn-login-home{
     font-size: 14px;
@@ -35,6 +31,7 @@ body {
 }
 
 .btn-trial {
+
     font-size: 14px;
     padding: 10px 30px;
     color: #625928;
@@ -45,14 +42,14 @@ body {
 
     /* I put this margin to align the space between the text x button */
     margin: 70px;
-    display: inherit;
+    
 }
 
 a {
     font-size: 14px;
     color: #625928;
     text-decoration: none;
-    /* font-family: sans-serif; */
+    font-family: sans-serif;
 }
 
 
@@ -63,61 +60,28 @@ a {
     justify-content: center;
     flex-direction: column;
     color: white;
-    position: relative;
-    z-index: 100;
-}
-
-
-.background-layer{
-    top:0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    z-index: 20;
-    background-color: rgb(0, 0, 0, 0.3);
-    position: fixed;
 }
 
 
 .mask { 
     background-image: url("images/hero-mask.png");
     height: 100%;
-    background-size: cover;
-    position: fixed;
-    /* forco a imagem tomar a tela inteira */
-    top:0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    z-index: 10;
-} 
-
-
-h1, h2, h3, h4, h5{
-    margin: 0;
-}
-
+}   
 
 h1 {
-        font-size: 60px;
-        /* font-family: sans-serif; */
+        font-size: 50px;
+        font-family: sans-serif;
         
         /* I put this margin to align the space in the text */
         margin: -11px;
 }
 
-
 p {
-    margin: 0 0 10 0;
     font-size: 16px;
-    color: #f4e8a1;
-    /* font-family: sans-serif; */
-}
+    color: rgb(232, 232, 173);
+    font-family: sans-serif;
 
-.btn-cta__icon{
-    margin-left: 40px;
 }
-
 
 
 /* ----------------------------- Format Login Page ------------------------------ */
@@ -126,10 +90,6 @@ p {
     color: rgb(234,227,166);
     font-weight: bold;
 }
-
-/* .form-login{
-
-} */
 
 .btn-login-login {
     font-size: 14px;
@@ -146,7 +106,7 @@ p {
 }
 
 span {
-    /* font-family: sans-serif; */
+    font-family: sans-serif;
     font-size: 15px;
     display: flex;
     align-items: center;
@@ -165,6 +125,7 @@ input {
     padding: 5px;
     margin: 10px;
     
+    
 }
 
 .form-background {
@@ -172,7 +133,6 @@ input {
     height: 37%;
     background: rgba(0, 0, 0, 0.7); 
     padding: 70px 40px;
-    border-radius: 1%;
 }
 
 ::placeholder {
