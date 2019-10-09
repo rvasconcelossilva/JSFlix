@@ -11,29 +11,112 @@ header {
     height: 60px;
     position: relative;
     /* essa propriedade permite criar "camadas" para posicionar os elementos, usei esse para posicionar o header na frente dos backgrounds*/
-    /* z-index: 21; */
+    z-index: 21;
+}
+
+.mask {
+    /* background-image: url("../images/hero-mask.png"); */
+    height: 100%;
+    background-size: cover;
+    position: fixed;
+    /* forco a imagem tomar a tela inteira */
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    background-color: rgb(0, 0, 0, 0.2);
+}
+
+.push {
+    margin-left: auto;
 }
 
 body {
     margin: 0;
     height: 100%;
-    background-color: red;
+    background-color: white;
+    background-image: url("../images/big-mouth-bg.webp");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     font-family: 'Roboto', sans-serif;
+    /* overflow: hidden; */
+}
+
+a {
+    color: white;
+    padding: 6px;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.glide h3 {
+    padding: 0px 0px 0px 50px;
 }
 
 .container {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+    height: calc(100% - 100px);
     align-items: center;
-    /* padding: 15px; */
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    z-index: 100;
 }
 
 .container img {
-    width: 302px;
-    height: 192px;
+    width: 213.77px;
+    height: 120.23px;
+}
+
+.content img {
+    display: flex;
+    padding: 10px 0px 10px 50px;
+    width: 400px;
+    height: 200px;
+}
+
+.button-dashboard {
+    display: inline-flex;
+    padding: 10px 0px 10px 50px;
+}
+
+.button-dashboard span {
+    padding: 10px
+}
+
+.btn-play-dashboard {
+    /* padding: 15px 10px 14px 100px; */
+    padding: 10px 30px;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* border: 1px solid #808080; */
+    border-radius: 3px;
+    margin: 10px;
+    font-weight: bold;
+}
+
+.btn-my-list-dashboard {
+    padding: 10px 30px;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* border: 1px solid #808080; */
+    border-radius: 3px;
+    margin: 10px;
+    font-weight: bold;
+}
+
+.content-description {
+    padding: 10px 0px 10px 50px;
+}
+
+.more {
+    padding: 0px 0px 0px 50px;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0;
 }

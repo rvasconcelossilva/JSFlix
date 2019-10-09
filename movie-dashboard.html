@@ -7,11 +7,13 @@
     <link rel="stylesheet" href="css/dashboard.css">
     <link rel="stylesheet" href="css/glide.core.min.css">
     <link rel="stylesheet" href="css/glide.theme.min.css">
+
+
     <title>Dashboard - JSFlix</title>
 </head>
 
 <body>
-    <div class="background-layer"></div>
+
     <div class="mask"></div>
 
     <header class="header">
@@ -21,22 +23,42 @@
         </div>
         <div class="menu-dashboard">
             <ul>
-                <li>Home</li>
-                <li>TV Shows</li>
-                <li>Movies</li>
-                <li>Recentey added</li>
-                <li>My list</li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">TV Shows</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">Recently added</a></li>
+                <li><a href="#">My list</a></li>
             </ul>
         </div>
-        <div class="header-dashboard">
-            <a role="button" href="#" class="btn-message-dashboard">sino</a>
-            <a role="button" href="#" class="btn-profile-dashboard">photo</a>
-            <a role="button" href="#" class="btn-icon-dashboard">icon</a>
+        <div class="push">
+            <ul>
+
+                <li><a role="button" href="#"><span class="fas fa-bell fa-2x"></span></a></li>
+                <li><a role="button" href="#"><span class="fas fa-user-circle fa-2x"></span></a></li>
+                <li><a role="button" href="#"><span class="fas fa-sort-down fa-1x"></span></a></li>
+
+            </ul>
         </div>
 
     </header>
 
     <div class="container">
+        <div class="content">
+            <img src="./images/big-mouth-logo.webp" alt="Big Mouth Logo">
+
+            <div class="button-dashboard">
+                <a role="button" href="#" class="btn-play-dashboard"><span class="fas fa-play fa-1x"></span>Play</a>
+                <a role="button" href="#" class="btn-my-list-dashboard"><span class="fas fa-plus fa-1x"></span>My list</a>
+            </div>
+
+            <div class="content-description">
+                <h3>Watch Season 3 Now</h3>
+                <p>Raging hormones, unruly bodies, awkward romances:
+                    <br> Puberty is coming. And it's a filthy beast.</p>
+            </div>
+
+        </div>
+        <p class="more">More movies</p>
         <div class="glide">
             <div class="glide__track" data-glide-el="track">
                 <ul class="glide__slides">
@@ -62,27 +84,27 @@
                 <button class="glide__arrow glide__arrow--right" data-glide-dir=">">></button>
             </div>
         </div>
-
     </div>
-
 
 
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
     <script>
         const config = {
             type: 'carousel',
-            gap: 20,
             keyboard: true,
-            perView: 5,
+            perView: 7,
+            gap: 110,
             breakpoints: {
                 800: {
                     perView: 2
                 }
             }
+
         };
 
         new Glide('.glide', config).mount()
     </script>
+    <script src="https://kit.fontawesome.com/9ec8cc1948.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
