@@ -1,0 +1,39 @@
+html {
+    height: 100%;
+}
+
+header {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    align-items: center;
+    height: 60px;
+    position: relative;
+    /* essa propriedade permite criar "camadas" para posicionar os elementos, usei esse para posicionar o header na frente dos backgrounds*/
+    /* z-index: 21; */
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    background-color: red;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 15px; */
+}
+
+.container img {
+    width: 302px;
+    height: 192px;
+}

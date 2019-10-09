@@ -10,7 +10,6 @@ header {
     align-items: center;
     height: 60px;
     position: relative;
-
     /* essa propriedade permite criar "camadas" para posicionar os elementos, usei esse para posicionar o header na frente dos backgrounds*/
     z-index: 21;
 }
@@ -18,14 +17,14 @@ header {
 body {
     margin: 0;
     height: 100%;
-    background-image: url("images/hero-bg.png");
+    background-image: url("../images/hero-bg.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     font-family: 'Roboto', sans-serif;
 }
 
-.btn-login-home{
+.btn-login-home {
     font-size: 14px;
     padding: 10px 30px;
     color: #625928;
@@ -42,7 +41,6 @@ body {
     border: 1px solid #f6d515;
     border-radius: 3px;
     font-style: normal;
-
     /* I put this margin to align the space between the text x button */
     margin: 70px;
     display: inherit;
@@ -55,7 +53,6 @@ a {
     /* font-family: sans-serif; */
 }
 
-
 .content {
     height: calc(100% - 100px);
     display: flex;
@@ -67,9 +64,8 @@ a {
     z-index: 100;
 }
 
-
-.background-layer{
-    top:0;
+.background-layer {
+    top: 0;
     bottom: 0;
     right: 0;
     left: 0;
@@ -78,34 +74,33 @@ a {
     position: fixed;
 }
 
-
-.mask { 
-    background-image: url("images/hero-mask.png");
+.mask {
+    background-image: url("../images/hero-mask.png");
     height: 100%;
     background-size: cover;
     position: fixed;
     /* forco a imagem tomar a tela inteira */
-    top:0;
+    top: 0;
     bottom: 0;
     right: 0;
     left: 0;
     z-index: 10;
-} 
+}
 
-
-h1, h2, h3, h4, h5{
+h1,
+h2,
+h3,
+h4,
+h5 {
     margin: 0;
 }
 
-
 h1 {
-        font-size: 60px;
-        /* font-family: sans-serif; */
-        
-        /* I put this margin to align the space in the text */
-        margin: -11px;
+    font-size: 60px;
+    /* font-family: sans-serif; */
+    /* I put this margin to align the space in the text */
+    margin: -11px;
 }
-
 
 p {
     margin: 0 0 10 0;
@@ -114,34 +109,31 @@ p {
     /* font-family: sans-serif; */
 }
 
-.btn-cta__icon{
+.btn-cta__icon {
     margin-left: 40px;
 }
 
 
-
 /* ----------------------------- Format Login Page ------------------------------ */
-.btn-back-home{
-    cursor:pointer;
-    color: rgb(234,227,166);
+
+.btn-back-home {
+    cursor: pointer;
+    color: rgb(234, 227, 166);
     font-weight: bold;
 }
+
 
 /* .form-login{
 
 } */
 
 .btn-login-login {
-    font-size: 14px;
-    padding: 10px 115px;
-    width: 7.3cm;
-    height: 1.3cm;
-    color: #625928;
+    padding: 15px 10px 14px 110px;
     background-color: #f6d515;
     border: 1px solid #f6d515;
     border-radius: 3px;
-    display: flex;
-    margin: 10px 20px 0 10px;
+    display: inherit;
+    margin: 10px;
     font-weight: bold;
 }
 
@@ -150,10 +142,8 @@ span {
     font-size: 15px;
     display: flex;
     align-items: center;
-    color: rgb(119,119,100);
+    color: rgb(119, 119, 100);
     padding: 0px 0 2px 11px;
-
-    
 }
 
 input {
@@ -164,19 +154,12 @@ input {
     border-radius: 3px;
     padding: 5px;
     margin: 10px;
-    
 }
 
 .form-background {
-    background-image: url("images/hero-mask.png");
+    background-image: url("../images/hero-mask.png");
     height: 37%;
-    background: rgba(0, 0, 0, 0.7); 
-    padding: 70px 40px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 40px 40px 80px 40px;
     border-radius: 1%;
 }
-
-::placeholder {
-    color: gray;
-    opacity: 0.5;
-}
-
